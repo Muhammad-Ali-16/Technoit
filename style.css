@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +12,7 @@
     --color-text--: #eee;
     --nav-scroll-color--: #111010;
     --bg-tranparent--: #ffffff00;
+    --section-bg-color--: #f2f3f8;
 }
 
 .dark-theme {
@@ -22,6 +22,7 @@
     --color-text--: #eee;
     --nav-scroll-color--: #eeeeee;
     --bg-tranparent--: #0000008a;
+    --section-bg-color--: #161617;
 }
 
 /* :root {
@@ -125,6 +126,7 @@ h6 {
     transition: .5s all;
     background: var(--nav-scroll--);
     z-index: 999;
+    border-bottom: 1.5px solid #025add;
 }
 
 .nav-txt-color {
@@ -176,6 +178,39 @@ h6 {
 .bi.bi-justify {
     color: #025add;
     font-size: 30px;
+}
+
+/* --------------------<!>Navbar-Overlay<!>-------------------- */
+
+.nav-overlay {
+    width: 0;
+    position: fixed;
+    z-index: 998;
+    background: var(--nav-scroll--);
+    height: 100%;
+    overflow: hidden;
+    transition: .4s all;
+}
+
+.overlay-content {
+    padding: 90px 0 0 22px;
+}
+
+.overlay-txt-color {
+    color: var(--nav-scroll-color--);
+}
+
+.close-btn {
+    border: none;
+    font-size: 25px;
+    background: transparent;
+    color: #0c6de0;
+    display: none;
+    margin-right: 18px;
+}
+
+.close-btn:hover {
+    color: #0c6de0;
 }
 
 /* --------------------<!>Hero-Section<!>-------------------- */
@@ -248,7 +283,7 @@ h6 {
 
 .services-main {
     height: 150vh;
-    background: #eeeeee;
+    background: var(--section-bg-color--);
 }
 
 
