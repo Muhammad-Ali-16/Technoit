@@ -737,12 +737,12 @@ button.accordion-button {
     padding: 65px 0;
 }
 
-.projects-heading-main{
+.projects-heading-main {
     width: 88%;
     margin: 0 auto;
 }
 
-.projects-sub-heading{
+.projects-sub-heading {
     margin: 15px 0;
     color: #eeeeee;
 }
@@ -755,10 +755,49 @@ button.accordion-button {
     overflow: hidden;
 }
 
-.blogs-main .card{
+.blogs-main .col-lg-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs-main .card {
+    width: 340px;
     background: transparent;
     box-shadow: 1px 1px 8px #8f8f8f;
+    margin: 12px 0;
 }
+
+.blogs-main .card .card-link{
+    font-size: large;
+    font-weight: 400;
+}
+
+.card-title,.card-name,.card-date{
+    color: #808080;
+    font-weight: 400;
+    font-size: small;
+}
+
+/* --------------------<!>Contact-Section<!>-------------------- */
+
+.contact-main {
+    height: 100vh;
+    background: var(--section-bg-color--);
+    overflow: hidden;
+}
+
+.contact-main .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+
 
 
 
@@ -782,6 +821,12 @@ button.accordion-button {
 @media screen and (max-width:790px) and (min-width:575px) {
     .services-main .card {
         width: 250px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .contact-form{
+        width: 75%;
     }
 }
 
@@ -822,10 +867,10 @@ button.accordion-button {
         width: 100%;
     }
 
-    .projects-heading-main{
+    .projects-heading-main {
         width: 100%;
     }
-    
+
 
 }
 
