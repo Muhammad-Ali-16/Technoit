@@ -49,8 +49,6 @@ function NavOverlay() {
     let open = document.getElementById("open-btn");
     let close = document.getElementById("close-btn");
 
-    console.log(overlay_content);
-
     open.addEventListener("click", function openNav() {
         overlay.style.width = "250px";
         overlay_content.style.display = "block";
@@ -69,7 +67,6 @@ function NavOverlay() {
 }
 
 NavOverlay();
-
 
 function openTab(evt, cityName) {
 
@@ -91,3 +88,15 @@ function openTab(evt, cityName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+jQuery(document).ready(function ($) {
+    $('#counter').counterUp({
+        delay: 10,
+        time: 800,
+    });
+});
+
+AOS.init({
+    duration: 900,
+    once: true
+});    
