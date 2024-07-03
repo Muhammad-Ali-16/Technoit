@@ -33,38 +33,6 @@
     --form-bg--: #2c2c2c;
 }
 
-/* :root {
-    --font-default:
-    'Poppins', sans-serif;
-    --font-primary:
-    'Poppins', sans-serif;
-    --font-secondary:
-    'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    --color-bg: #025add;
-    --hero-overlay-color: transparent;
-    --menu-color: #ffffff;
-    --theme-color: #025add;
-    --border-color: #e2e2e2;
-    --theme-color-dark: #f8f8f8;
-    --text-color: #3a3a3a;
-    --hero-text-color: #ffffff;
-    --text-white-color: #ffffff;
-    --text-grey-color: #3a3a3a;
-    --text-theme-color: #025add;
-    --light-color: #ffffff;
-    --color-default: #3a3a3a;
-    --color-primary: #025add;
-    --color-secondary: #0c6de0;
-    --color-start: #3a3a3a;
-    --color-end: #3a3a3a;
-    --hero-card-bg: rgb(228 227 223 / 17%);
-    --box-shadow-color: rgb(82 90 101 / 10%);
-  } 
-    font-family: "Noto Sans", sans-serif;
-    font-family: "Rubik", sans-serif;
- */
-
 h1,
 h2,
 h3,
@@ -509,18 +477,12 @@ ul {
     margin: 10px 0;
 }
 
-/* --------------------<!>Testimonials-Section<!>-------------------- 
+/* --------------------<!>Testimonials-Section<!>--------------------*/ 
 
 .testimonials-main {
     height: auto;
     background: var(--section-bg-color--);
     overflow: hidden;
-}
-
-.testimonials-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .testimonials-main .card {
@@ -534,7 +496,6 @@ ul {
     display: flex;
     margin: 20px 0 0 25px;
 }
-
 
 .card-heading {
     color: #0c6de0;
@@ -561,28 +522,10 @@ ul {
     font-size: 20px;
 }
 
-.slider-item {
-    width: 100vw;
-    margin: 0 20px;
-    transition: .4s all;
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.slider-item.active {
-    display: block;
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.slider-item.prev {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.slider-item.next {
-    transform: translateX(100%);
-    opacity: 0;
+.testimonials-main .card-img-top{
+    width: 100px;
+    border-radius: 50px;
+    margin: 0 20px 0 0;
 }
 
 /* --------------------<!>Counter-Section<!>-------------------- */
@@ -912,6 +855,10 @@ button.accordion-button {
 @media screen and (min-width:992px) {
     .contact-form {
         width: 75%;
+    }
+
+    .testimonials-main .card{
+        width: 80%;
     }
 }
 
