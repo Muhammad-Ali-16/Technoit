@@ -1,0 +1,91 @@
+:root {
+    --bg-transparent--:#ffffff8e;
+    --color-text-2--: #111010;
+    --section-bg-color--: #f2f3f8;
+}
+
+.dark-theme{
+    --bg-transparent--:#0000008a;
+    --color-text-2--: #eeeeee;
+    --section-bg-color--: #161617;
+}
+
+.pages-top-banner {
+    position: relative;
+    background: url(/Techno-IT/Images/page-header-bg.png);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.pages-banner-content {
+    background: var(--bg-transparent--);
+    display: block;
+    padding: 16vh 0;
+    text-align: center;
+}
+
+.pages-nav{
+    height: 60px;
+    background: #025add;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content h5 a{
+    color: #eee;
+    font-size: large;
+    font-weight: 400;
+}
+
+.nav-content h6 span{
+    margin: 0 8px;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.nav-content h6{
+    font-weight: 400;
+}
+
+.teams-main .teams-content-main p{
+    color: var(--color-text-2--);
+}
+
+h3{
+    color: var(--color-text-2--);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1050px) {
+    .pages-top-banner {
+        background-position: -45px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .pages-top-banner {
+        background-position: -80px;
+    }
+}
