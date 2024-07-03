@@ -16,6 +16,7 @@
     --section-bg-color--: #f2f3f8;
     --sub-heading-color--: #808080;
     --btn-hover--: #eeeeee;
+    --form-bg--: #e7e6e6;
 }
 
 .dark-theme {
@@ -29,7 +30,7 @@
     --section-bg-color--: #161617;
     --sub-heading-color--: #808080;
     --btn-hover--: #141313;
-
+    --form-bg--: #2c2c2c;
 }
 
 /* :root {
@@ -132,7 +133,7 @@ ul {
     height: 100vh;
     width: 100%;
     position: fixed;
-    background: url(images/hero-bg.png);
+    background: url(Images/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -252,7 +253,7 @@ ul {
 }
 
 .hero-main::before {
-    content: url(images/hero-pattren.png);
+    content: url(Images/hero-pattren.png);
     width: 100%;
     position: absolute;
     top: 0;
@@ -694,9 +695,11 @@ ul {
 }
 
 .accordion-item {
-    background: #d2d2d2;
+    background: var(--form-bg--);
+    border: none;
     margin: 13px 0;
     border-radius: 12px;
+    color: var(--color-text-2--);
 }
 
 button.accordion-button {
@@ -755,7 +758,7 @@ button.accordion-button {
     overflow: hidden;
 }
 
-.blogs-main .col-lg-4{
+.blogs-main .col-lg-4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -768,12 +771,14 @@ button.accordion-button {
     margin: 12px 0;
 }
 
-.blogs-main .card .card-link{
+.blogs-main .card .card-link {
     font-size: large;
     font-weight: 400;
 }
 
-.card-title,.card-name,.card-date{
+.card-title,
+.card-name,
+.card-date {
     color: #808080;
     font-weight: 400;
     font-size: small;
@@ -782,24 +787,104 @@ button.accordion-button {
 /* --------------------<!>Contact-Section<!>-------------------- */
 
 .contact-main {
-    height: 100vh;
+    height: auto;
     background: var(--section-bg-color--);
     overflow: hidden;
 }
 
-.contact-main .col{
+.contact-main .col {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-form{
+.contact-form {
     width: 100%;
 }
 
+.form-control {
+    background-color: var(--form-bg--);
+    border: none;
+    color: var(--color-text-2--);
+}
 
+.form-control::placeholder {
+    color: var(--color-text-2--);
+    font-size: small;
+}
 
+.form-control:is(:focus, :focus-visible, :focus-within) {
+    background-color: var(--form-bg--);
+    border: none;
+    box-shadow: none;
+    color: var(--color-text-2--);
+    font-weight: 400;
+}
 
+.form-text {
+    height: 150px;
+}
+
+.contact-content-left h6 {
+    color: var(--color-text-2--);
+}
+
+.contact-content-left h5 {
+    color: var(--sub-heading-color--);
+    font-size: small;
+    font-weight: 400;
+}
+
+/* --------------------<!>Footer-Section<!>-------------------- */
+
+.footer-main {
+    height: auto;
+    background: var(--bg-tranparent--);
+    overflow: hidden;
+}
+
+.footer-main h5{
+    color: #025add;
+}
+
+.footer-main ul li a, .footer-main ul li{
+    color: #e7e6e6;
+    font-size: small;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    transition: .1s all;
+}
+
+.footer-main ul li a:hover{
+    color: #025add;
+}
+
+.footer-main ul li p{
+    font-size: smaller;
+}
+
+.footer-logo p{
+    font-size: small;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.footer-social-icons i{
+    color: #e7e6e6;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+.footer-social-icons i:hover{
+    color: #025add;
+}
+
+.footer-main .col-12 h6{
+    color: #808080;
+    font-weight: 300;
+    font-size: small;
+}
 
 
 
@@ -825,7 +910,7 @@ button.accordion-button {
 }
 
 @media screen and (min-width:992px) {
-    .contact-form{
+    .contact-form {
         width: 75%;
     }
 }
